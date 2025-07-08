@@ -4,6 +4,7 @@ env:
   PLATFORMS: linux/amd64, linux/arm64
 
 on:
+  workflow_dispatch:
   push:
     tags: [ 'v*.*.*' ]  # Trigger only on semantic version tags
 
